@@ -1,0 +1,11 @@
+# Automatically normalize line endings to LF for all text files ( not for binaries )
+* text=auto eol=lf
+
+# For files with .cmd ( case-sensitive ) extension, enforce CRLF ( Windows Style ) line endings
+*.[cC][mM][dD] text eol=crlf
+
+#For .bat files ( Windows batch scripts ), user CRLF endings, consistent with Windows shell requirements
+*.[bB][aA][tT] text eol=crlf
+
+# For Powershell script files ( .ps1 ), enforce CRLF endings
+*.[pP][sS]1 text eol=crlf
